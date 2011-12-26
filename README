@@ -1,2 +1,22 @@
-1. Конфигурируем скрипт, изменяя conf/ytl_conf.rb
+1. Конфигурируем скрипт, изменяя conf/ytl_conf.rb по шаблону:
+
+$config = {  :s3_access_key_id     => '', 
+             :s3_secret_access_key => '',
+             :s3_bucket_name => '',
+             :s3_server => 's3-eu-west-1.amazonaws.com',
+
+             :yt_source => 'yt_uploader',
+             :yt_login => '',
+             :yt_password => '',
+             :yt_developer_key => '',
+             :yt_feed => 'http://uploads.gdata.youtube.com/feeds/api/users/default/uploads',
+
+             :db_host => '',
+             :db_username => '',
+             :db_password => '',
+             :db_database => '',
+
+             :video_chunk_duration => 10
+}
+
 2. ruby ytl.rb
