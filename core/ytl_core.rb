@@ -6,6 +6,8 @@ require "aws/s3.rb"
 
 require File.expand_path(File.dirname(__FILE__) + '/../conf/ytl_conf.rb')
 
+AWS::S3::DEFAULT_HOST = $config[:s3_server]
+
 def create_entry(cfg={})
 entry = <<EOF
 <entry xmlns="http://www.w3.org/2005/Atom"
