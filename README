@@ -1,0 +1,2 @@
+1. Конфигурируем скрипт, изменяя conf/ytl_conf.rb
+2. ruby ytl.rb
