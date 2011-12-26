@@ -1,6 +1,5 @@
 #!/usr/bin/env ruby
 
-require "mysql2.rb"
 require "gdata.rb"
 require "aws/s3.rb"
 

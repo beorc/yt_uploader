@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
 
+require "mysql2.rb"
 require File.expand_path(File.dirname(__FILE__) + '/core/ytl_core.rb')
 
 bucket = connect_to_s3
